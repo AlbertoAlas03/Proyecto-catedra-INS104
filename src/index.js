@@ -6,20 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import { AuthProvider } from './hooks/contexts/auth-context';
-import { AssessmentProvider } from './hooks/contexts/assessment-context';
-import { CourseProvider } from './hooks/contexts/course-context';
+import { AuthProvider } from './hooks/context/auth-context';
+import { CourseProvider } from './hooks/context/course-context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <AuthProvider>
     <CourseProvider>
-      <AssessmentProvider>
-      {/* <React.StrictMode> */}
+      {/* <React.StrictMode>*/}
       <App />
-      </AssessmentProvider>
+      {/* </React.StrictMode>*/}
     </CourseProvider>
-    {/* </React.StrictMode> */}
   </AuthProvider>
 );
 

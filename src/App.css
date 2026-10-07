@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.curso-item {
+  transition: all 0.2s ease-in-out; /* transición suave */
+  border-radius: 8px; /* opcional */
+}
+
+.curso-item:hover {
+  background-color: #f0f8ff; /* color de fondo */
+  transform: translateY(-2px); /* se levanta un poco */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* sombra */
+  cursor: pointer;
+}
